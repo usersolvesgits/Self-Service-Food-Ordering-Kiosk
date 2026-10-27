@@ -1,7 +1,6 @@
-
 # 🚀 Self-Service-Food-Ordering-Kiosk
 
-Welcome to the my repository!  Follow the instructions below to set up and run the project locally.
+Welcome to the my repository! Follow the instructions below to set up and run the project locally.
 
 ---
 
@@ -20,95 +19,124 @@ Welcome to the my repository!  Follow the instructions below to set up and run t
 
 Start by cloning this repository to your local machine.
 
-
+```bash
 git clone https://github.com/amir2965/Self-Service-Food-Ordering-Kiosk.git
+```
+
+```bash
 cd Self-Service-Food-Ordering-Kiosk
-2️⃣ Install Dependencies
+```
+
+## 2️⃣ **Install Dependencies**
+
 Install the required dependencies using npm or yarn.
 
-bash
-Copy
-Edit
+```bash
 npm install
+```
+
 # or
+
+```bash
 yarn install
+```
+
 This will install all the necessary packages listed in the package.json file.
 
-3️⃣ Set Up Environment Variables
+## 3️⃣ **Set Up Environment Variables**
+
 To configure the project’s environment variables (such as JWT Secret or database credentials), you'll need to create a .env file.
 
 Steps:
-Copy the .env.example file to a new file named .env:
 
-bash
-Copy
-Edit
+1. Copy the .env.example file to a new file named .env:
+
+```bash
 cp .env.example .env
-Edit the .env file with your own values. For example:
+```
 
-plaintext
-Copy
-Edit
+2. Edit the .env file with your own values.  
+   For example:
+
+```txt
 JWT_SECRET=your-own-secret-key-here
-🔑 Generate a Secure JWT Secret
+```
+
+### 🔑 Generate a Secure JWT Secret
+
 To generate a strong and secure JWT Secret, you can run the following command in your terminal:
 
-bash
-Copy
-Edit
+```bash
 node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+```
+
 This will output a random 64-byte string that you can use as your JWT_SECRET value.
 
-⚠️ Important:
-Do not push the .env file to GitHub for security reasons.
+### ⚠️ Important:
+
+Do not push the .env file to GitHub for security reasons.  
 Ensure that your .env file is added to the .gitignore file to prevent accidental commits.
-4️⃣ Running the Project Locally
+
+## 4️⃣ **Running the Project Locally**
+
 Once you have all the dependencies installed and the environment variables set up, you can start the project with the following command:
 
-bash
-Copy
-Edit
+```bash
 npm start
-# or
-yarn start
-This will start the application on your local server, typically accessible at http://localhost:3000. Check the logs to confirm the port and any other details.
+```
 
-5️⃣ Additional Configuration (Optional)
+# or
+
+```yarn
+yarn start
+```
+
+This will start the application on your local server, typically accessible at http://localhost:3000.  
+Check the logs to confirm the port and any other details.
+
+## 5️⃣ **Additional Configuration (Optional)**
+
 Cloud Deployment:
 If you're planning to deploy this project to the cloud (e.g., Heroku, AWS, etc.), you can set the environment variables in the respective platform's interface.
 
 For Heroku, for example, you can set the JWT_SECRET like this:
 
-bash
-Copy
-Edit
+```bash
 heroku config:set JWT_SECRET=your-secret-key
+```
+
 For AWS or Google Cloud, you can store your secrets in their respective Secret Manager services for secure management.
 
-6️⃣ Troubleshooting
+## 6️⃣ **Troubleshooting**
+
 Here are some common issues and their fixes:
 
-Missing Dependencies:
-If you see errors related to missing modules, try running the following command again:
+- Missing Dependencies:
+  If you see errors related to missing modules, try running the following command again:
 
-bash
-Copy
-Edit
-npm install
-# or
-yarn install
-JWT Secret Undefined:
-If you encounter errors saying that JWT_SECRET is undefined, double-check your .env file and ensure the variable is properly set.
+  ```bash
+  npm install
+  ```
 
-🔒 Security Reminder
-Always generate strong secrets for production environments.
+  or
+
+  ```yarn
+  yarn install
+  ```
+
+- JWT Secret Undefined:
+  If you encounter errors saying that JWT_SECRET is undefined, double-check your .env file and ensure the variable is properly set.
+
+## 🔒 Security Reminder
+
+Always generate strong secrets for production environments.  
 Never expose sensitive information such as API keys, database passwords, or JWT secrets in the codebase.
-🎉 Enjoy the Project!
+
+## 🎉 Enjoy the Project!
+
 Thank you for using my project! If you have any issues or suggestions, feel free to open an issue or contribute to the project.
 
 Happy coding! 🚀
-
-
 
 ![Screenshot 2025-01-24 021306](https://github.com/user-attachments/assets/0df2bc75-8494-4c3b-8e25-5a655ce41e77)
 ![Screenshot 2025-01-24 021241](https://github.com/user-attachments/assets/7567d89c-3c06-4bb8-a631-b7f1bd912690)
@@ -125,4 +153,3 @@ Happy coding! 🚀
 ![Screenshot 2025-01-24 021349](https://github.com/user-attachments/assets/6b1a4086-be70-40e9-b597-1ff020e4a62e)
 ![Screenshot 2025-01-24 021325](https://github.com/user-attachments/assets/0029d0aa-9c94-4969-8232-fbc550c7c665)
 ![Screenshot 2025-01-24 021315](https://github.com/user-attachments/assets/bf32ce6b-307d-4d6b-b8df-93b0356ee56d)
-
